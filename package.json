@@ -1,0 +1,27 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "This is a blog page",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themrth/cleanblog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "themrth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themrth/cleanblog/issues"
+  },
+  "homepage": "https://github.com/themrth/cleanblog#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
