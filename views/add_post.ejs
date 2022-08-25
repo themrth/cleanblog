@@ -23,20 +23,25 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <form novalidate>
+        <form action="/posts" method="POST">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Post Başlık</label>
-              <input type="text" class="form-control" placeholder="İsim" id="name" required data-validation-required-message="Lütfen isminizi giriniz...">
+              <input type="text" class="form-control" placeholder="İsim" id="title" name="title" required data-validation-required-message="Lütfen isminizi giriniz...">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Post Detay</label>
-              <textarea rows="5" class="form-control" placeholder="Mesaj" id="message" required data-validation-required-message="Lütfen mesajınızı giriniz..."></textarea>
+              <textarea rows="5" class="form-control" placeholder="Mesaj" id="message" name="detail" required data-validation-required-message="Lütfen mesajınızı giriniz..."></textarea>
               <p class="help-block text-danger"></p>
             </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <input type="file" name="image" class="form-control">
+            </div> 
           </div>
           <br>
           <div id="success"></div>
