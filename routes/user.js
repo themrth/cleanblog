@@ -28,6 +28,13 @@ router.get('/add-post', (req, res) => {
 router.post('/posts', async (req,res) => {
   await Post.create(req.body)
   res.redirect('/')
+});
+
+router.get('/posts/:id', async (req,res) => {
+  const post = await Post.findById(req.params.id)
+  res.render('../views/post.ejs', {
+    post
+  })
 })
 
 module.exports = router;
