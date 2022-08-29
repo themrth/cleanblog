@@ -30,7 +30,7 @@ app.get('/posts/edit/:id', pageControllers.editPostPage);
 
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost/cleanblog-db', {
+mongoose.connect('mongodb+srv://themrth:rXjCke1QM4SODmZO@blog-app.s414qbb.mongodb.net/blog-app?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
